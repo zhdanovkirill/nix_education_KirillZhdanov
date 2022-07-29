@@ -1,5 +1,3 @@
-# @w3tec
-
 # Logs #
 /logs
 *.log
@@ -27,22 +25,3 @@ tsconfig.build.json
 .idea/
 *.swp
 .awcache
-
-# Generated source-code #
-src/**/*.js
-src/**/*.js.map
-!src/public/**/*
-test/**/*.js
-test/**/*.js.map
-coverage/
-!test/preprocessor.js
-mydb.sql
-uploads
-.xlsx
-public/assets/*
-
-
-# Elastic Beanstalk Files
-.elasticbeanstalk/*
-!.elasticbeanstalk/*.cfg.yml
-!.elasticbeanstalk/*.global.yml
