@@ -93,7 +93,7 @@ function getApartmentParams() {
         apartment: roomNumber.value > 0 ? roomNumber.value : 456,
     }
 }
-
+/** Compare with bespechnayadiana */
 function calcEntranceAndFloor(amountRoomsOnFloor, amountFloors, apartmentNumber) {
     let amountRoomsOnPorch = amountFloors * amountRoomsOnFloor;
     let calcPorch = 1;
