@@ -15,10 +15,12 @@
     <div class="exercises-section">
         <span class="section-title">Exercise 1</span>
         <div class="section-line">
-            <span class="line-label">Iteration count</span>
-            <input id="input-ex1" class="section-input" type="number" placeholder="Only number" min="-1">
+            <label class="line-label" for="ex1">Object </label>
+            <textarea id="input-ex1" class='section-input textarea' name="result" rows="10"
+                      placeholder="Put object.  format => { 'Киев': 'Украина',...}"></textarea>
         </div>
-        <button class="btn btn-add" onclick="processing('ex1')">FizBuz</button>
+
+        <button class="btn btn-add" onclick="runExercise('ex1')">Object parser</button>
         <div class="section-line">
             <label class="line-label" for="ex1">Result </label>
             <textarea id="ex1" class='section-input textarea' name="result" rows="10"
@@ -29,10 +31,10 @@
     <div class="exercises-section">
         <span class="section-title">Exercise 2</span>
         <div class="section-line">
-            <span class="line-label">Iteration count</span>
-            <input id="input-ex2" class="section-input" type="number" placeholder="Only number" min="-1">
+            <span class="line-label">Array length (multiple %3)</span>
+            <input id="input-ex2" class="section-input" type="number" placeholder="Only number %3" min="3">
         </div>
-        <button class="btn btn-add" onclick="processing('ex2')">Factorial</button>
+        <button class="btn btn-add" onclick="runExercise('ex2')">Get Array</button>
         <div class="section-line">
             <label class="line-label" for="ex2">Result </label>
             <textarea id="ex2" class='section-input textarea' name="result" rows="10"
@@ -40,52 +42,37 @@
         </div>
     </div>
 
-
     <div class="exercises-section">
         <span class="section-title">Exercise 3</span>
-
         <div class="section-line">
-            <span class="line-label">Sheets in ream paper</span>
-            <input id="sheets-in-ream-paper" class="section-input" type="number" placeholder="Only number" min="0">
+            <span class="line-label">Day number</span>
+            <input id="input-day" class="section-input" type="number" placeholder="Day number" min="1" max="7">
         </div>
 
         <div class="section-line">
-            <span class="line-label">Consumption per week</span>
-            <input id="consumption-per-week" class="section-input" type="number" placeholder="Only number" min="0">
+            <span class="line-label">Language</span>
+            <input id="input-ln" class="section-input" type="text" placeholder="Language (ua, ru, de, en)">
         </div>
 
-        <div class="section-line">
-            <span class="line-label">Weeks Amount</span>
-            <input id="weeks-amount" class="section-input" type="number" placeholder="Only number" min="0">
-        </div>
-
-        <button class="btn btn-add" onclick="processing('ex3', false)">Ream Paper</button>
+        <button class="btn btn-add" onclick="runExercise('ex3', false)">Day</button>
         <div class="section-line">
             <label class="line-label" for="ex3">Result </label>
-            <textarea id="ex3" class='section-input textarea' name="result" rows="3"
+            <textarea id="ex3" class='section-input textarea' name="result" rows="1"
                       disabled>Press on button above and see result</textarea>
         </div>
     </div>
 
+
     <div class="exercises-section">
         <span class="section-title">Exercise 4</span>
         <div class="section-line">
-            <span class="line-label">Roms On Floor</span>
-            <input id="rooms-on-floor" class="section-input" type="number" placeholder="Only number" min="0">
+            <span class="line-label">Array number</span>
+            <input id="input-ex4" class="section-input" type="text" placeholder="Example: [1, 2, 3, 4]">
         </div>
 
+        <button class="btn btn-add" onclick="runExercise('ex4')">Calculate</button>
         <div class="section-line">
-            <span class="line-label">Floors</span>
-            <input id="floors" class="section-input" type="number" placeholder="Only number" min="0">
-        </div>
-
-        <div class="section-line">
-            <span class="line-label">Room Number</span>
-            <input id="room-number" class="section-input" type="number" placeholder="Only number" min="0">
-        </div>
-        <button class="btn btn-add" onclick="processing('ex4', false)">Apartment</button>
-        <div class="section-line">
-            <label class="line-label" for="ex3">Result </label>
+            <label class="line-label" for="ex4">Result </label>
             <textarea id="ex4" class='section-input textarea' name="result" rows="3"
                       disabled>Press on button above and see result</textarea>
         </div>
@@ -94,19 +81,19 @@
     <div class="exercises-section">
         <span class="section-title">Exercise 5</span>
         <div class="section-line">
-            <span class="line-label">Iteration count</span>
-            <input id="input-ex5" class="section-input" type="number" placeholder="Only number" min="-1">
+            <span class="line-label">Binary code</span>
+            <input id="input-ex5" class="section-input" type="number" placeholder="Only binary" pattern="[0-1]*">
         </div>
-        <button class="btn btn-add" onclick="processing('ex5')">Pyramid</button>
+        <button class="btn btn-add" onclick="runExercise('ex5')">parse</button>
         <div class="section-line">
             <label class="line-label" for="ex5">Result </label>
-            <textarea id="ex5" class='section-input textarea' name="result" rows="10"
+            <textarea id="ex5" class='section-input textarea' name="result" rows="1"
                       disabled>Press on button above and see result</textarea>
         </div>
     </div>
 
 </div>
 
-<script src="script/HW1.js"></script>
+<script nomodule type="module" src="index.js"></script>
 </body>
 </html>
