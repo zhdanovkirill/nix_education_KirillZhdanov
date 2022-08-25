@@ -32,6 +32,91 @@
 
         <div class="content">
 
+            <div id="filter" class="filter-container display-none ">
+                <div class="filter-section">
+                    <div class="filter-title">
+                        <div>Price</div>
+                        <img class="arrow" src="./resources/icons/arrow_left.svg" alt="">
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-row">
+                            <lable>From</lable>
+                            <input id="price-from" data-filter-type="price" data-filter-prop="from" value="0" type="number">
+                        </div>
+                        <div class="filter-row">
+                            <lable>To</lable>
+                            <input id="price-to" data-filter-type="price" data-filter-prop="to" type="number">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        <div>Color</div>
+                        <img class="arrow" src="./resources/icons/arrow_left.svg" alt="">
+                    </div>
+                    <div class="filter-content filter-color">
+
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        <div>Memory</div>
+                        <img class="arrow" src="./resources/icons/arrow_left.svg" alt="">
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="storage" value="32">32 Gb</span>
+                            <span><input type="checkbox" data-filter-type="storage" value="512">512 Gb</span>
+                        </div>
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="storage" value="64">64 Gb</span>
+                            <span><input type="checkbox" data-filter-type="storage" value="1024">1 Tb</span>
+                        </div>
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="storage" value="128">128 Gb</span>
+                            <span><input type="checkbox" data-filter-type="storage" value="2048">2 Tb</span>
+                        </div>
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="storage" value="256">256 Gb</span>
+                            <span><input type="checkbox" data-filter-type="storage" value="4096">4 Tb</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-section">
+                    <div class="filter-title">
+                        <div>OS</div>
+                        <img class="arrow" src="./resources/icons/arrow_left.svg" alt="">
+                    </div>
+                    <div class="filter-content filter-os">
+
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <div class="filter-title">
+                        <div>Display</div>
+                        <img class="arrow" src="./resources/icons/arrow_left.svg" alt="">
+                    </div>
+                    <div class="filter-content">
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="display" value="2-5">2-5</span>
+                            <span><input type="checkbox" data-filter-type="display" value="5-7">5-7</span>
+                        </div>
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="display" value="7-12">7-12</span>
+                            <span><input type="checkbox" data-filter-type="display" value="12-16">12-16</span>
+                        </div>
+                        <div class="filter-row">
+                            <span><input type="checkbox" data-filter-type="display" value="16-1000">16+</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <div id="items" class="items">
 
                 <div id="card" class="card">
