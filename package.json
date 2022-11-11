@@ -1,0 +1,11 @@
+{
+  "name": "nix_education_KirillZhdanov",
+  "version": "1.0.0",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node ./src/index.js"
+  }
+}
