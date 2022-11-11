@@ -21,7 +21,6 @@ app.get('/messages', (req, res) => {
     res.send(JSON.stringify(messages));
 });
 
-
-server.listen(3001, () => {
+server.listen((process.env.PORT || 3001), function(){
     console.log('Listening on http://localhost:3001');
 });
